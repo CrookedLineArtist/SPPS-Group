@@ -1,11 +1,14 @@
+$trigger-screen: 700px;
+
 html, body{
     padding: 0;
     margin: 0;
 
 }
 #logo{
+    position: fixed;
     width: 70px;
-    padding: 10px;
+    padding: 20px;
 
 }
 
@@ -33,8 +36,19 @@ html, body{
 // }
 
 .article1{
+    width: 100vw;
     svg{
         width: 100%;
+    }
+    @media screen and (max-width: $trigger-screen){
+        .lg{
+            display:none;
+        }
+    }
+    @media screen and (min-width: $trigger-screen){
+        .mobile{
+            display:none;
+        }
     }
     
 }

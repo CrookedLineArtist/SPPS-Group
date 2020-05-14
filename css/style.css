@@ -4,11 +4,28 @@ html, body {
 }
 
 #logo {
+  position: fixed;
   width: 70px;
-  padding: 10px;
+  padding: 20px;
+}
+
+.article1 {
+  width: 100vw;
 }
 
 .article1 svg {
   width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .article1 .lg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .article1 .mobile {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+#logo {
+  width: 70px;
+  padding: 10px;
+}
+
+.article1 svg {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

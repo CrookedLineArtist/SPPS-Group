@@ -1,54 +1,106 @@
 $trigger-screen: 700px;
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,400;1,600;1,700;1,900&display=swap');
+$font-family: 'Source Sans Pro', sans-serif;
 html, body{
     padding: 0;
     margin: 0;
-
+    font-family: $font-family;
 }
 #logo{
-    position: fixed;
+    position: absolute;
     width: 70px;
     padding: 20px;
 
+    @keyframes showup {
+        10% {
+
+            viewBox: 0 0 0 1105;   
+       }
+
+        100%{
+            viewBox: 0 0 815 1105;
+        }
+      }
+
+    svg{
+        animation: showup 10s ease-in infinite;
+
+        
+    }
+
 }
 
-// nav{
-//     position: relative;
+nav{
+    position: relative;
 
 
-//     .menu{
-//         position: absolute;
-//         z-index: 10;
-//         background-color: red;
-//         width: 100vw;
-//         height: 100vh;
+    .menu{
+        position: absolute;
+        z-index: 10;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
 
-//         ul{
-//             list-style-type:none;
-//             display: flex; 
-//             li{
-//                 padding: 10px;
-//             }
+        ul{
+            list-style-type:none;
+
+            li{
+                color: royalblue;
+                overflow: hidden;
+                font-size: 5vh;
+                padding: 5vh 0px;
+                text-decoration: none;
+                background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% 100%;
+                background-position: 100%;
+                transition: background-position 675ms ease-in-out;
+                text-decoration: none;
+                &:hover {
+                    background-position: 10% 100%;
+                  }
+            }
             
+        }
+    }
+    
+}
+
+// .article1{
+//     width: 100vw;
+//     svg{
+//         width: 100%;
+//     }
+//     @media screen and (max-width: $trigger-screen){
+//         .lg{
+//             display:none;
+//         }
+//     }
+//     @media screen and (min-width: $trigger-screen){
+//         .mobile{
+//             display:none;
 //         }
 //     }
     
 // }
 
-.article1{
-    width: 100vw;
-    svg{
-        width: 100%;
+@media only screen and (min-width: 600px){
+    .mobile{
+        display: none;
     }
-    @media screen and (max-width: $trigger-screen){
-        .lg{
-            display:none;
-        }
-    }
-    @media screen and (min-width: $trigger-screen){
-        .mobile{
-            display:none;
-        }
-    }
-    
 }
+@media only screen and (max-width: 601px){
+    .web{
+        display: none;
+    }
+}
+
+.main{
+    text-align: center;
+    img{
+        max-width: 100vw;
+    }
+    }
+

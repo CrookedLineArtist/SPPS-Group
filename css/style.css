@@ -91,4 +91,17 @@ nav .menu ul li:hover {
 .main img {
   max-width: 100vw;
 }
+
+.footer {
+  position: fixed;
+  background-color: yellow;
+  min-width: 94vw;
+  left: 3vw;
+  bottom: 20px;
+  float: left;
+}
+
+.footer svg {
+  width: 50px;
+}
 /*# sourceMappingURL=style.css.map */

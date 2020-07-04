@@ -104,3 +104,17 @@ nav{
     }
     }
 
+
+.footer{
+    position: fixed;
+    background-color: yellow;
+    min-width: 94vw;
+    left: 3vw;
+    bottom: 20px;
+    float: left;
+    
+    svg{
+        width: 50px;
+    }
+
+}
